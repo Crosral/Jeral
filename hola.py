@@ -66,15 +66,15 @@
 # elif edad>=18 and edad<65:
 #     print("flaco uste es adulto")
 
-print("escriba 3 numeros")
-n1=input()
-n2=input()
-n3=input()
+# print("escriba 3 numeros")
+# n1=input()
+# n2=input()
+# n3=input()
 
-if n1>=n2 and n1>n3:
-    print("el numero mayor es", n1)
-elif n2>n3:
-    print("el numero mayor es", n2)
-else:
-    print("el numero mayor es", n3) 
+# if n1>=n2 and n1>n3:
+#     print("el numero mayor es", n1)
+# elif n2>n3:
+#     print("el numero mayor es", n2)
+# else:
+#     print("el numero mayor es", n3) 
 
