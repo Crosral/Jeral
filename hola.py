@@ -78,3 +78,21 @@
 # else:
 #     print("el numero mayor es", n3) 
 
+
+
+
+# 21-04-2025
+
+
+
+
+# clave=1234
+
+# pas=int(input("ingrese su clave "))
+
+# if pas==clave:
+#     print("ingreso causa, ahora vete")
+
+# else:
+
+#     print("vete desconocido")
