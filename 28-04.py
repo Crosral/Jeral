@@ -122,38 +122,180 @@
 
 
 
-tarjeta=20000
+# tarjeta=20000
 
-b5k=5
-b10k=5
-b20k=5
-b2k=5
-b1k=10
+# b5k=5
+# b10k=5
+# b20k=5
+# b2k=5
+# b1k=10
 
 
 
-print("retire dinero del cajero,")
+# print("retire dinero del cajero,")
 
-while True:
-    print('''caunto dinero quiere retirar?
+# while True:
+#     print('''caunto dinero quiere retirar?
           
-        1.- 5000
-        2.- 10000
-        3,. 20000
-        4.- 50000
-        5.- otro
-          ''')
+#         1.- 5000
+#         2.- 10000
+#         3,. 20000
+#         4.- 50000
+#         5.- otro
+#           ''')
     
-    op=int(input("selecione una opción "))
+#     op=int(input("selecione una opción "))
 
-    if op==1:
-        print("usted retiro 5000")
-        tarjeta=tarjeta-5000
+#     if op==1:
+#         print("usted retiro 5000")
+#         tarjeta=tarjeta-5000
         
-    elif op==2:
-        print("opcion 2")
-    elif op==3:
-        print("salir")
-        break
+#     elif op==2:
+#         print("opcion 2")
+#     elif op==3:
+#         print("salir")
+#         break
+
+
+
+
+
+# intentos=3
+
+# while intentos>0:
+
+#     color=input("ingrese un color ") 
+
+#     if color.lower()!="negro":
+
+#         print("el color no es el requerido")
+#         intentos-=1
+
+#     else:
+
+#         print("este es el color requerido")
+
+#         break
+
+# print("gracias por dar el color requerido")
+
+
+
+# arancel=200000
+
+# descuento=0
+
+
+# print('''
+#       1.- la florida 20%
+#       2.- la pintana 30%
+#       3.- puente alto 25%
+#       4.- san joaquin 15%
+#       ''')
+
+# comuna=int(input("escriba su comuna "))
+
+
+# if comuna==1:
+#     descuento=descuento+20
+# elif comuna==2:
+#     descuento=descuento+30
+# elif comuna==3:
+#     descuento=descuento+25
+# elif comuna==4:
+#     descuento=descuento+15
+# else:
+#     print("eliga una opcion valida")
+
+# grupo=int(input("¿con cuantas vive en su hogar? "))
+
+# if grupo==1:
+
+#     descuento=descuento+2
+
+# elif grupo>=2 and grupo<=4:
+
+#     descuento=descuento+3
+
+# elif grupo>=5:
+
+#     descuento=descuento+4
+
+# else:
+#     print("numero invalido como el niño en silla de ruedas")
+
+# print("el total del descuento es", descuento )
+# descpesos=descuento/100*arancel
+# apagar=arancel-descpesos
+# print(f"el total a pagar es {apagar}")
+
+total=0
+
+print('''
+      1.- zapatillas
+      2.- poleras
+      3.- pelotas
+      
+''')
+
+cat=int(input())
+
+if cat==1:
+    print('''
+          1.- zapatillas runing 2000
+          2.- zapatillas futbolito 1500
+          3.- zapatilla padel 2000
+''')
+    
+op=int(input())
+    
+if op==1:
+    total=total+2000+200
+elif op==2:
+    total=total+1500+200
+elif op==3:
+    total=total+60+200
+else:
+    print("eliga una opcion valida")
+
+
+if cat==2:
+    print('''
+          1.- polera runing 2000
+          2.- polera futbolito 1500
+          3.- polera padel 3500
+''')
+    
+op=int(input())
+    
+if op==1:
+    total=total+2000+600
+elif op==2:
+    total=total+1500+600
+elif op==3:
+    total=total+3500+600
+else:
+    print("eliga una opcion valida")
+
+
+
+if cat==3:
+    print('''
+          1.- pelota 2000
+          2.- polera especial 1500
+          3.- polera de buen diseño 2500
+''')
+    
+op=int(input())
+    
+if op==1:
+    total=total+2000+200
+elif op==2:
+    total=total+1500+200
+elif op==3:
+    total=total+2500+200
+else:
+    print("eliga una opcion valida")
+
 
 
