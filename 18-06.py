@@ -73,3 +73,47 @@ personas={
     2:"dato2",
     3:"dato3",
 }
+
+while True:
+    try:
+        print('''  
+              1.- ingresar persona
+              2.- nostrar listado
+              3.- actualizar persona
+              4.- borrar persona
+              5.- salir
+              
+            ''')
+        op=int(input("selecione una opcion"))
+        match op:
+            case 1:
+                nombre=input("ingrese el nombre")
+                numero=int(input("ingrese el numero"))
+                est=int(input("estado civil 1.- casado 2.- soletor"))
+                if est==1:
+                    estcivil="civil"
+                else:
+                    estcivil="soltero"
+                edad=int(input("ingrese su edad"))
+                nextkey=len(personas+1)
+                personas[nextkey+1]={"nombre": nombre,
+                                     "numeros": {numero},
+                                     "estadp civil": estcivil, 
+                                     "trabajando": True,
+                                     "edad": edad }
+                print("persona infresada con existe")
+            case 2:
+                for oersiba, val in personas.items():
+                    print(personas, val)
+            case 3:
+                print()
+            case 4:
+                print()
+            case 5:
+                print()
+            case _:
+                print()
+    except Exception as e:
+        print("el error es ", e)
+
+
